@@ -16,3 +16,11 @@ Taking inspiration and help from:
 Datasets from:
 - https://huggingface.co/datasets/ErfanMoosaviMonazzah/fake-news-detection-dataset-English/viewer/default/validation
 
+How to run:
+- Make sure that you have dataset files from the above link in a folder named "dataset" in the project directory before running the code.
+
+Python modules required:
+-sklearn (for confusion matrix and other performance metrics
+-nltk (for list of stopwords in english language)
+-pandas (for data preprocessing)
+-seaborn & matplotlib (for plotting the confusion matrix)
