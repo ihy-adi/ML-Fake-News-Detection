@@ -7,3 +7,12 @@ Here is the problem statement:
 Create a fake news detection system by classifying news articles into fake or real using decision trees
 and Naive Bayes. Analyze the impact of text preprocessing (tokenization, TF-IDF) on the performance of both
 models.
+
+
+Taking inspiration and help from:
+- https://github.com/kapilsinghnegi/Fake-News-Detection
+- https://www.youtube.com/watch?v=NxEHSAfFlK8
+
+Datasets from:
+- https://huggingface.co/datasets/ErfanMoosaviMonazzah/fake-news-detection-dataset-English/viewer/default/validation
+
