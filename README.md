@@ -2,11 +2,14 @@
 
 Fake News Detection Using Decision Trees and Naive Bayes
 
-
 Here is the problem statement:
 Create a fake news detection system by classifying news articles into fake or real using decision trees
 and Naive Bayes. Analyze the impact of text preprocessing (tokenization, TF-IDF) on the performance of both
 models.
+
+Software:
+- Python
+- Google Colab
 
 How to run:
 - Make sure that you have dataset files from the above link in a folder named "dataset" in the project directory before running the code.
@@ -16,6 +19,7 @@ Python modules required:
 - nltk (for list of stopwords in english language)
 - pandas (for data preprocessing)
 - seaborn & matplotlib (for plotting the confusion matrix)
+- Numpy for mathematics
 
 
 Taking inspiration and help from:
