@@ -151,3 +151,16 @@ manual_testing(news_article)
 news_article2 = "German Foreign Minister Sigmar Gabriel said it was necessary to do everything possible to make progress on the nuclear deal with Iran and that he did not see any indications during a visit to the United States that Washington would terminate it. U.S. President Donald Trump said earlier on Thursday that “nothing is off the table” in dealing with Iran following its test launch of a ballistic missile."
 manual_testing(news_article2)
 
+
+# Confusion matrix
+from sklearn.metrics import confusion_matrix
+# Create confusion matrix
+cm = confusion_matrix(y_test, pred_dt)
+
+# Plotting the confusion matrix
+plt.figure(figsize=(6,4))
+sns.heatmap(cm, annot=True, fmt='d', cmap='Blues', xticklabels=['Fake News', 'Real News'], yticklabels=['Fake News', 'Real News'])
+plt.xlabel('Predicted')
+plt.ylabel('Actual')
+plt.title('Confusion Matrix')
+plt.show()
