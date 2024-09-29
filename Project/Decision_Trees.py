@@ -36,8 +36,7 @@ df_test = pd.read_csv("hf://datasets/ErfanMoosaviMonazzah/fake-news-detection-da
 
 #label'd as fake new 0 ; real news 1
 
-"""# **Dropping unwanted columns**"""
-
+# **Dropping unwanted columns**
 
 
 df_train.columns
@@ -78,7 +77,7 @@ df_test['text'] = df_test['text'].apply(wordopt)
 
 df_train.head()
 
-"""# **Tokenization**"""
+# Tokenization
 
 x_train = df_train['text']  # Features for training
 y_train = df_train['label']  # Labels for training
@@ -96,7 +95,7 @@ xv_train = vectorization.fit_transform(x_train)
 # Transforming the test data into TF-IDF vectors
 xv_test = vectorization.transform(x_test)
 
-"""# Decision trees"""
+# Decision trees
 
 from sklearn.tree import DecisionTreeClassifier
 from sklearn.metrics import classification_report
@@ -117,9 +116,8 @@ print(f'Accuracy: {accuracy}')
 # Classification report for the predictions
 print(classification_report(y_test, pred_dt))
 
-"""# **Manual Testing**
-I entered news from the Validation.tsv file.
-"""
+# Manual Testing
+# I entered news from the Validation.tsv file.
 
 def output_label(n):
     if n == 0:
